@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-image: url(autumn.jpg)">
+	<div style="background-color: yellow; width: 155px; height: 280px;">
+		<div class="abs">
+			<h1 style="color: blue; margin-left: 10px; font-family: Arial">ОЧКИ: 
+				<span class="score">
+				</span>
+			</h1>
+		</div>
+
+		<div style="top: 50px; margin-left: 10px;" class="abs">
+			<h3 style="color: blue; font-size: 28px; font-family: Arial; " class="List">Лист</h3>
+		</div>
+
+		<div style="top: 90px; margin-left: 10px" class="abs">
+			<h3 style="color: blue; font-size: 28px; font-family: Arial; " class="Palka">Палка</h3>
+		</div>
+
+		<div style="top: 130px; margin-left: 10px" class="abs">
+			<h3 style="color: blue; font-size: 28px; font-family: Arial; " class="Kust">Куст</h3>
+		</div>
+
+		<div style="top: 170px; margin-left: 10px" class="abs">
+			<h3 style="color: blue; font-size: 28px; font-family: Arial; " class="Grib">Гриб</h3>
+		</div>
+
+		<div style="top: 210px; margin-left: 10px" class="abs">
+			<h3 style="color: blue; font-size: 28px; font-family: Arial; " class="Gnezdo">Гнездо</h3>
+		</div>
+
+		<div class="abs listok class" style="left: 1100px; top: 600px;">
+			<img src="лист.webp" class="listimg listok">
+		</div>
+
+		<div class="abs palochka class" style="left: 300px; top: 800px;">
+			<img src="Palka.png" class="palkaimg palochka">
+		</div>
+
+		<div class="abs kustik class" style="left: 1100px; top: 700px;">
+			<img src="Kust.png" class="kustimg kustik">
+		</div>
+
+		<div class="abs gribok class" style="left: 1600px; top: 850px;">
+			<img src="Grib.png" class="gribimg gribok">
+		</div>
+
+		<div class="abs gnezdinka class" style="left: 350px; top: 750px;">
+			<img src="Gnezdo.png" class="gnezdoimg gnezdinka">
+		</div>
+	</div>
+	
+
+	<script type="text/javascript">
+		let number = 0;
+		number = 0;
+		document.querySelector('.score').innerHTML = number;
+		document.querySelector('.class').onclick = function(){
+			document.querySelector('.score').innerHTML = number
+				number = number + 1
+		}
+
+		document.querySelector('.listok').onclick = function(){
+				number = number + 1
+			document.querySelector('.score').innerHTML = number
+			alert("Ты нашел листочек, молодец")
+			document.querySelector('.listimg').style.display = "none"
+			document.querySelector('.List').style.textDecoration = "line-through"
+		}
+
+		document.querySelector('.palochka').onclick = function(){
+				number = number + 1
+			document.querySelector('.score').innerHTML = number
+			alert("Палка найдена, поздравляю")
+			document.querySelector('.palkaimg').style.display = "none"
+			document.querySelector('.Palka').style.textDecoration = "line-through"
+		}
+
+		document.querySelector('.kustik').onclick = function(){
+				number = number + 1
+			document.querySelector('.score').innerHTML = number
+			alert("Юхуу, ты заметил куст!")
+			document.querySelector('.kustimg').style.display = "none"
+			document.querySelector('.Kust').style.textDecoration = "line-through"
+		}
+
+		document.querySelector('.gribok').onclick = function(){
+				number = number + 1
+			document.querySelector('.score').innerHTML = number
+			alert("Опа, плюс грибок")
+			document.querySelector('.gribimg').style.display = "none"
+			document.querySelector('.Grib').style.textDecoration = "line-through"
+		}
+
+		document.querySelector('.gnezdinka').onclick = function(){
+				number = number + 1
+			document.querySelector('.score').innerHTML = number
+			alert("Гнездо найдено")
+			document.querySelector('.gnezdoimg').style.display = "none"
+			document.querySelector('.Gnezdo').style.textDecoration = "line-through"
+		}
+
+	</script>
+</body>
+</html>

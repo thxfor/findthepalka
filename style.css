@@ -1,0 +1,48 @@
+    .abs {
+       	position: absolute;
+    }
+
+    .palkaimg {
+        height: 60px;
+    }
+
+    .palochka {
+        height: 60px;
+        width: 60px;
+    }
+
+    .kustimg {
+        height: 100px;
+    }
+
+    .kustik {
+        height: 100px;
+        width: 100px;
+    }
+
+    .gribimg {
+        height: 60px;
+    }
+
+    .gribok {
+        height: 60px;
+        width: 60px;
+    }
+
+    .gnezdoimg {
+        height: 60px;
+    }
+
+    .gnezdinka {
+        height: 60px;
+        width: 60px;
+    }
+
+    .listimg {
+    	height: 40px;
+    }
+
+    .listok {
+    	height: 40px;
+    	width: 40px;
+    }
